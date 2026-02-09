@@ -6,10 +6,23 @@
 	
 /*******************************************************/
 // setup()
+
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
 
+	world.gravity.y = 10;
+
+	cnv = new Canvas(windowWidth, windowHeight);
+
+	box = new Sprite (-250, 500, 150, 150)
+	box.rotationSpeed = 2;
+	box.vel.x = 3;
+	box.color = '#34567';
+
+	box2 = new Sprite (1000, 500, 150, 150)
+	box2.rotationSpeed = -2;
+	box2.vel.x = -3;
 }
 	
 /*******************************************************/
