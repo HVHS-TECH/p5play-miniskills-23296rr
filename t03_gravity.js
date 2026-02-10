@@ -1,22 +1,36 @@
 /*******************************************************/
-// P5.play: t03_gravity
-// Sprite falls due to gravity
-// Written by ???
+// P5.play: t01_create_sprite
+// Create a sprite
+/// Written by ???
 /*******************************************************/
 	
 /*******************************************************/
 // setup()
+
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
 
+	world.gravity.y = 10;
+
+	cnv = new Canvas(windowWidth, windowHeight);
+
+	box = new Sprite (250, 500, 150, 150)
+	box.rotationSpeed = 2;
+	box.vel.x = 5;
+	box.vel.y = -10;
+	box.color = '#5656';
+
+	box2 = new Sprite (1000, 500, 150, 150, 's')
+	box2.rotationSpeed = -2;
+	box2.vel.x = -3;
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background('234')
 }
 
 /*******************************************************/
