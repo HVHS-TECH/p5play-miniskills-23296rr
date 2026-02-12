@@ -9,23 +9,30 @@
 
 /*******************************************************/
 function setup() {
-	console.log("setup: ");
+	cnv = new Canvas(500, 500);
+	cnv.color = 'cyan'
 
+	red = new Sprite(50, 50, 100, 100);
+	red.color = 'red';
 
+	green = new Sprite( 450, 50, 100, 100);
+	green.color = 'green';
 
-	cnv = new Canvas(windowWidth, windowHeight);
+	blue = new Sprite( 450, 450, 100, 100);
+	blue.color = 'blue';
 
-	box = new Sprite (250, 500, 150, 150)
-	
-	box.color = '#5656';
+	yellow = new Sprite( 50, 450, 100, 100);
+	yellow.color = 'yellow';
 
+	purple = new Sprite( 250, 250, 100, 100);
+	purple.color = 'purple';
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background("#00FFFF");
 }
 
 /*******************************************************/
