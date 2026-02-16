@@ -12,7 +12,6 @@ function setup() {
 	console.log("setup: ");
 
 	world.gravity.y = 0;
-
 	const VELARRAY = [-1, 1];
 
 	cnv = new Canvas(500, 500);
