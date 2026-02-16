@@ -13,22 +13,21 @@ function setup() {
 
 	world.gravity.y = 0;
 
-	alienXvel = random()
-	alienYvel = random()
+	const VELARRAY = [-1, 1];
 
 	cnv = new Canvas(500, 500);
 
-	ball_1 = new Sprite(width/2, height/2, 50, 'd');
-	ball_1.color = 'grey';
-	ball_1.bounciness = 1;
-
 	for (i = 0; i < 100; i++) {
-		alien = new Sprite(250, 250, 10, 10);
-		alien.vel.x = alienXvel;
-		alien.vel.y = alienYvel;
+		randNum = random(4, 7) * random(VELARRAY);
+		randLocX = random(0, 500)
+		randLocY = random(0, 500)
+		alien = new Sprite(randLocX, randLocY, 10, 10);
+		alien.vel.x = randNum;
+		alien.vel.y = randNum;
 		alien.bounciness = 1;
 		alien.friction = 0;
 		alien.drag = 0;
+		
 	}
 
 	wallLeft  = new Sprite(4, windowHeight/2, 8, windowHeight, 'k');
