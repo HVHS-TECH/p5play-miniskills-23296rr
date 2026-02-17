@@ -16,6 +16,10 @@ function setup() {
 
 	cnv = new Canvas(500, 500);
 
+	ball_1 = new Sprite(width/2, height/2, 50, 'd');
+	ball_1.color = 'grey';
+	ball_1.bounciness = 1;
+
 	for (i = 0; i < 100; i++) {
 		randNum = random(4, 7) * random(VELARRAY);
 		randLocX = random(0, 500)
